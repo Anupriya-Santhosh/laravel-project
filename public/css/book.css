@@ -1,0 +1,43 @@
+
+
+
+
+    
+/* Header Section */
+.head {
+    position: relative;
+    height: 730px; 
+    background: url('images/pexels-eberhardgross-1612351.jpg') no-repeat center center;
+    background-size: cover;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.display-4{
+     font-size: 8rem;
+} 
+
+.head-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header .container {
+    position: relative;
+    z-index: 1; 
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+    

@@ -1,0 +1,292 @@
+
+
+body {
+    /* background: linear-gradient(rgba(7, 1, 48, 0.5), rgba(0, 0, 0, 0.5)), url('../images/travel-hd-jr86mcmkf7szpa3v.webp') no-repeat center center fixed; */
+    background-size: cover; 
+    margin: 0;
+    font-family: Arial, sans-serif; 
+    /* background-color: #222; */
+    overflow-x: hidden;
+}
+
+/* Hero Section */
+
+/* slider section  */
+
+.slider{
+    height: 100vh;
+    margin-top: -50px;
+    width: 100vw;
+    overflow: hidden;
+    position: relative;
+}
+.slider .list .item{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    inset: 0 0 0 0;
+}
+.slider .list .item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.2s ease-in-out; 
+}
+
+.slider .list .item .content{
+    position: absolute;
+    top: 20%;
+    width: 1140px;
+    max-width: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding-right: 30%;
+    box-sizing: border-box;
+    color: #fff;
+    text-shadow: 0 5px 10px #0004;
+}
+
+.slider .list .item .content .title,
+.slider .list .item .content .type{
+    font-size: 5em;
+    font-weight: bold;
+    line-height: 1.3em;
+}
+.slider .list .item .type{
+    color: #e2f83f;
+}
+.slider .list .item .button{
+    display: grid;
+    grid-template-columns: repeat(2, 130px);
+    grid-template-rows: 40px;
+    gap: 5px;
+    margin-top: 20px;
+}
+.slider .list .item .button button{
+    border: none;
+    background-color: #eee;
+    font-family: Poppins;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.4s;
+    letter-spacing: 2px;
+}
+
+
+.slider .list .item .button button:hover{
+    letter-spacing: 3px;
+}
+.slider .list .item .button button:nth-child(2){
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: #eee;
+}
+
+
+
+
+
+/* Thumbnail Section  */
+.thumbnail{
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    width: max-content;
+    z-index: 100;
+    display: flex;
+    gap: 20px;
+}
+
+.thumbnail .item{
+    width: 150px;
+    height: 220px;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.thumbnail .item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 5px 0 15px rgba(0, 0, 0, 0.3);
+}
+
+
+/* nextPrevArrows Section  */
+.nextPrevArrows{
+    position: absolute;
+    top: 80%;
+    right: 52%;
+    z-index: 100;
+    width: 300px;
+    max-width: 30%;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.nextPrevArrows button{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #384959;
+    border: none;
+    color: #fff;
+    font-family: monospace;
+    font-weight: bold;
+    transition: .5s;
+    cursor: pointer;
+}
+.nextPrevArrows button:hover{
+    background-color: #fff;
+    color: #000;
+}
+
+/* Animation Part */
+.slider .list .item:nth-child(1){
+    z-index: 1;
+}
+
+
+/* animation text in first item */
+.slider .list .item:nth-child(1) .content .title,
+.slider .list .item:nth-child(1) .content .type,
+.slider .list .item:nth-child(1) .content .description,
+.slider .list .item:nth-child(1) .content .buttons
+
+/* Featured Destinations */
+.featured-destinations .card {
+    margin-bottom: 20px;
+    
+}
+
+/*about */
+
+.animated-image {
+    animation: fadeIn 1.5s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+  }
+  
+
+
+
+
+
+
+/* gallery section */
+.gallery {
+    background-color: #222; /* Optional background color */
+}
+
+.gallery-item {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    height: 300px; /* Adjust height as needed */
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+
+.gallery-item:hover {
+    transform: scale(1.05); /* Scale effect on hover */
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    color: #fff; /* White text color */
+    opacity: 0; /* Hidden by default */
+    transition: opacity 0.3s ease;
+}
+
+.gallery-item:hover .overlay {
+    opacity: 1; /* Show overlay on hover */
+}
+
+h2 {
+    color: #fff; /* White text for the section title */
+}
+
+.btn-success {
+    background-color: #384959; /* Bootstrap primary color */
+    border: none;
+}
+
+.btn-success:hover {
+    background-color: #384959; /* Darker shade on hover */
+}
+
+
+
+
+
+
+
+
+
+/* Reviews Page */
+
+.reviews-page h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.review-card {
+    border: 1px solid #ddd; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    width: 100%;
+}
+
+.review-header {
+    display: flex;
+    align-items: center;
+}
+
+.review-img {
+    width: 60px; 
+    height: 60px; 
+    object-fit: cover; 
+}
+
+.review-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+.review-text {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+.review-rating {
+    font-size: 1.25rem;
+}
+
+.star-rating i {
+    color: #f39c12; 
+}
+
+.star-rating i.bi-star {
+    color: #ddd; 
+}
+
+
+

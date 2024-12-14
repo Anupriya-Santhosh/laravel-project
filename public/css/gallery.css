@@ -1,0 +1,138 @@
+
+
+
+
+
+/* gallery section */
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+.gallery-item:hover img {
+    transform: scale(1.1);
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+.gallery-item:hover .overlay {
+    opacity: 1;
+}
+
+
+/* Photo Stories Section */
+.photo-stories-section {
+    background: #ffffff;
+    padding: 80px 0;
+    text-align: center;
+    animation: fadeInSection 1.2s ease-out;
+}
+
+.stories-title {
+    font-size: 3rem;
+    color: #2b3e50;
+    margin-bottom: 20px;
+    font-weight: 700;
+    text-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+    animation: slideInTitle 1s ease-out;
+    letter-spacing: 1px;
+}
+
+.stories-description {
+    font-size: 1.2rem;
+    color: #546375;
+    margin-bottom: 50px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.8;
+    animation: fadeInText 1.3s ease-out;
+}
+
+.stories-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.story-card {
+    background: #f8f9fb;
+    border-radius: 15px;
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.1);
+    width: 340px;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+    animation: fadeInOffers 1.5s ease-out;
+}
+
+.story-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 20px 35px rgba(0, 0, 0, 0.15);
+}
+
+.story-image {
+    background-size: cover;
+    background-position: center;
+    height: 220px;
+    border-bottom: 5px solid #546375;
+    transition: transform 0.3s;
+}
+
+.story-card:hover .story-image {
+    transform: scale(1.05);
+}
+
+.story-content {
+    padding: 20px;
+}
+
+.story-title {
+    font-size: 1.5rem;
+    color: #2b3e50;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.story-info {
+    font-size: 1rem;
+    color: #6a7b8c;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.read-story-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #2b3e50;
+    color: white;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.read-story-btn:hover {
+    background-color: #546375;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
+}
+

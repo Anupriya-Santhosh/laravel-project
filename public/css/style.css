@@ -1,0 +1,109 @@
+
+
+/*navbar-section*/
+
+.navbar-nav .nav-link.active {
+    color: yellow; /* Change the color to whatever you prefer */
+    font-weight: bold; /* Optional: to make the active link bold */
+}
+
+
+.navbar-brand img {
+    border-radius: 50%; 
+    object-fit: cover; 
+}
+
+.navbar-custom {
+    background-color: black;
+}
+
+.navbar-custom .navbar-brand,
+.navbar-custom .nav-link {
+    color: white;
+}
+
+
+.offcanvas-custom {
+    background-color: black;
+    color: white;
+}
+
+.offcanvas-custom .nav-link {
+    color: white;
+}
+
+.offcanvas-custom .nav-link:hover {
+    color: black; /* Change to your desired hover color */
+}
+
+.navbar-toggler {
+    border: none; /* Remove border */
+}
+
+.navbar-toggler-icon {
+    display: inline-block;
+    width: 30px; 
+    height: 30px; 
+    position: relative; 
+}
+
+.navbar-toggler-icon::before,
+.navbar-toggler-icon::after,
+.navbar-toggler-icon span {
+    content: '';
+    display: block;
+    height: 4px; 
+    background-color: rgb(6, 7, 6); 
+    border-radius: 2px; 
+    position: absolute; 
+    left: 0;
+}
+
+.navbar-toggler-icon::before {
+    top: 0; 
+}
+
+.navbar-toggler-icon span {
+    top: 50%; 
+    transform: translateY(-50%); 
+}
+
+.navbar-toggler-icon::after {
+    bottom: 0; 
+}
+
+
+
+
+
+/* Footer  */
+
+.footer a {
+color: #ddd;
+text-decoration: none;
+}
+
+.footer a:hover {
+color: #fff;
+text-decoration: underline;
+}
+
+.footer .social-links a {
+font-size: 1.5rem;
+}
+.footer .social-links :hover{
+color: black;
+}
+
+.footer form {
+max-width: 300px;
+}
+
+.footer form .form-control {
+border-radius: 0;
+}
+
+
+
+
+

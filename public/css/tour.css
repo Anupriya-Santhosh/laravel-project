@@ -1,0 +1,49 @@
+
+
+
+/* Header Section */
+.head {
+    position: relative;
+    height: 730px; 
+    background: url('/images/PWifxp.jpg') no-repeat center center;
+    background-size: cover;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.display-4{
+     font-size: 8rem;
+     font-size: 200px;
+     font-style: bold;
+} 
+
+.head-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header .container {
+    position: relative;
+    z-index: 1; 
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+.card-img-top {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .card-img-top:hover {
+    transform: scale(1.1); /* Zoom in */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Add shadow effect */
+  }

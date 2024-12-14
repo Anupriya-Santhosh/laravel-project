@@ -1,0 +1,71 @@
+
+/* About Us Section */
+
+
+
+
+/* Style for the story content box */
+.our-story-section .story-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  /* Style for the image */
+  .story-image img {
+    width: auto; /* Adjust as needed */
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  
+  /* Hover effect for box shadow and slight zoom */
+  .our-story-section .story-content:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px #364757;
+  }
+
+  
+  /* Responsive adjustment */
+  @media (max-width: 768px) {
+    .story-content {
+      flex-direction: column;
+    }
+    .story-image {
+      margin-bottom: 15px;
+    }
+  }
+
+  /* meet our team */
+
+  .team i {
+    font-size: 26px;
+    color: #000000;
+}
+
+.team p {
+    font-weight: 500;
+}
+
+.team .card {
+    border-radius: 0;
+    box-shadow: 5px 5px 15px #364757;
+    transition: all 0.3s ease-in;
+    -webkit-transition: all 0.3s ease-in;
+    -moz-transition: all 0.3s ease-in;
+}
+
+.team .card:hover {
+    background: #364757; /* Changed to #364757 */
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 5px 5px 10px #364757; /* Changed to #364757 */
+}
+
+.team .card:hover h3,
+.team .card:hover i {
+    color: #fff;
+}
